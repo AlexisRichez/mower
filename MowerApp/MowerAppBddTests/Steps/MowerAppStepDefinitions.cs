@@ -13,16 +13,12 @@ namespace MowerAppBddTests.Steps
     [Binding]
     public sealed class MowerAppStepDefinitions
     {
-        private readonly ScenarioContext _scenarioContext;
-
-        private Configuration _configuration;
+        private readonly Configuration _configuration;
 
         private MowerManager _manager;
 
-        public MowerAppStepDefinitions(ScenarioContext scenarioContext)
+        public MowerAppStepDefinitions()
         {
-            _scenarioContext = scenarioContext;
-
             _configuration = new Configuration
             {
                 Surface = new SurfaceConfiguration

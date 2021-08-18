@@ -3,9 +3,6 @@ using System.Collections.Generic;
 
 namespace MowerApp.Models
 {
-    /// <summary>
-    /// Mower.
-    /// </summary>
     public class Mower
     {
         /// <summary>
@@ -19,7 +16,7 @@ namespace MowerApp.Models
         public Location Location { set; get; }
 
         /// <summary>
-        /// 
+        /// Movements to be made by the mower.
         /// </summary>
         public List<Movement> Movements { set; get; }
 
@@ -34,7 +31,11 @@ namespace MowerApp.Models
             Movements = new List<Movement>();
         }
 
-
+        /// <summary>
+        /// Get mower next position.
+        /// </summary>
+        /// <param name="movement">Movement to calculate next position</param>
+        /// <returns>New position.</returns>
         public Position GetNextPosition(Movement movement)
         {
             if (movement.Equals(Movement.F))

@@ -13,6 +13,7 @@ namespace MowerApp
         static void Main()
         {
             var configuration = LoadConfiguration();
+
             var manager = new MowerManager(configuration);
             manager.Run();
 

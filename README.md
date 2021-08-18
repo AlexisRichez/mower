@@ -40,6 +40,7 @@ mowers deployed on the lawn. Each mower has 2 next lines : The first line give m
 
 The second line give instructions to the mower to go throughout the lawn.
 Instructions are characters without spaces.
+
 Each mower move sequentially, meaning that the second mower moves only when the first has fully performed its series of instructions.
 When a mower has finished, it give the final position and orientation.
 

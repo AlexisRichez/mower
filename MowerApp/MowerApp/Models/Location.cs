@@ -62,10 +62,12 @@
             }
         }
 
+
         /// <summary>
         /// Move mover forward.
         /// </summary>
-        /// <param name="surface"></param>
+        /// <param name="move">Need to move or just returning calculated location.</param>
+        /// <returns>Mower location after going forward</returns>
         public Location Forward(bool move)
         {
             int x = Position.X;
@@ -89,7 +91,6 @@
                     x = Position.X - 1;
                     break;
             }
-
 
             if(move)
             {
