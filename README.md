@@ -45,7 +45,7 @@ When a mower has finished, it give the final position and orientation.
 
 ## Example
 
-input file
+### Input file
 ```
 5 5
 1 2 N
@@ -54,7 +54,7 @@ LFLFLFLFF
 FFRFFRFRRF
 ```
 
-result
+### Result
 ```
 1 3 N
 5 1 E
