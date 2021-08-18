@@ -63,3 +63,4 @@ result
 * Create a DockerFile to publish the project
 * Adding Sonar for code coverage
 * Improve collisions by adding a collision check between mowers 
+* Adding more tests, actually very poor

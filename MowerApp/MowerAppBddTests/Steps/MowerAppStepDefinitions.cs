@@ -47,9 +47,8 @@ namespace MowerAppBddTests.Steps
             };
         }
 
-
         [Given(@"a mower is initially oriented to (.*)")]
-        public void GivenAMowerIsInitiallyOrientedToN(string p0)
+        public void GivenAMowerIsInitiallyOrientedTo(string p0)
         {
             _configuration.Mowers.Add(new MowerConfiguration
             {
@@ -64,13 +63,10 @@ namespace MowerAppBddTests.Steps
         [Given(@"with a position with X equal to (.*) and Y equal to (.*)")]
         public void GivenWithAPositionOfXEqualToAndYEqualTo(int p0, int p1)
         {
-            _configuration.Mowers[0].Location = new Location
+            _configuration.Mowers[0].Location.Position = new Position
             {
-                Position = new Position
-                {
-                    X = p0,
-                    Y = p1
-                }
+                X = p0,
+                Y = p1
             };
         }
 

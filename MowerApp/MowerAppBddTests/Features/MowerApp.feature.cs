@@ -133,6 +133,59 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
+        [Xunit.SkippableFactAttribute(DisplayName="Try to move a mower out of the surface")]
+        [Xunit.TraitAttribute("FeatureTitle", "MowerApp")]
+        [Xunit.TraitAttribute("Description", "Try to move a mower out of the surface")]
+        public virtual void TryToMoveAMowerOutOfTheSurface()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Try to move a mower out of the surface", null, ((string[])(null)));
+#line 13
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 14
+ testRunner.Given("a working surface with a top right limit position with X equal to 5 and Y equal t" +
+                        "o 5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 15
+ testRunner.And("a mower is initially oriented to E", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 16
+ testRunner.And("with a position with X equal to 0 and Y equal to 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 17
+ testRunner.When("movements sequence FFFFF is sent to the mower", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 18
+ testRunner.And("treatment is launched", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 19
+ testRunner.Then("the mower is finally oriented to E", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 20
+ testRunner.And("is having a final position of X equal to 5 and Y equal to 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
         [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.3.0.0")]
         [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
         public class FixtureData : System.IDisposable
