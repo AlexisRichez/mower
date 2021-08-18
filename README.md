@@ -1,4 +1,4 @@
-### Use case ###
+## Use case
 The company X wants to develop an automower for square surfaces.
 
 The mower can be programmed to go throughout the whole surface. 
@@ -24,15 +24,19 @@ Instructions are characters without spaces.
 Each mower move sequentially, meaning that the second mower moves only when the first has fully performed its series of instructions.
 When a mower has finished, it give the final position and orientation.
 
-### Example ###
+## Example
 
 input file
+```
 5 5
 1 2 N
 LFLFLFLFF
 3 3 E
 FFRFFRFRRF
+```
 
 result
+```
 1 3 N
 5 1 E
+```
