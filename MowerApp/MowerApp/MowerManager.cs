@@ -69,7 +69,6 @@ namespace MowerApp
             DisplayMowerFinalLocation(mower.Location);
         }
 
-
         /// <summary>
         /// Check if position is in collision with the surface (can be improved by adding a collision check between mowers)
         /// </summary>
