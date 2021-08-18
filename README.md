@@ -40,3 +40,9 @@ result
 1 3 N
 5 1 E
 ```
+
+## Screenshot
+
+<a href="#">
+    <img src="images/screenshot.png" alt="Screenshot">
+</a>
