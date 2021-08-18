@@ -79,7 +79,7 @@ result
     <img src="images/screenshot.png" alt="Screenshot">
 </a>
 
-## TODO
+## Todo
 * Create a DockerFile to publish the project
 * Adding Sonar for code coverage
 * Improve collisions by adding a collision check between mowers 
