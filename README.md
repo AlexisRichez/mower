@@ -2,9 +2,9 @@
     <a href="#">
         <img src="images/logo.png" alt="Logo">
     </a>
-    <br/>
-    <p style="font-size:40px"><b>Automatic Mower App</b></p>
 </p>
+
+# Mower App
 
 ## Use case
 The company X wants to develop an automower for square surfaces.
