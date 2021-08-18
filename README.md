@@ -2,7 +2,7 @@
 The company X wants to develop an automower for square surfaces.
 
 <a href="#">
-    <img src="images/usecase_grid.png" alt="Use case grid">
+    <img src="images/usecase_grid.png"  width="200" height="200" alt="Use case grid">
 </a>
 
 The mower can be programmed to go throughout the whole surface. 
@@ -16,7 +16,7 @@ For example, the position can be 0,0,N, meaning the mower is in the lower left o
 In that example, mower position is 1,2,E :
 <br/>
 <a href="#">
-    <img src="images/usecase_grid_mower.png" alt="Use case grid mower">
+    <img src="images/usecase_grid_mower.png"  width="200" height="200" alt="Use case grid mower">
 </a>
 
 To control the mower, we send a simple sequence of characters. 
