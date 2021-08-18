@@ -53,6 +53,12 @@ result
 5 1 E
 ```
 
+## Diagram
+
+<a href="#">
+    <img src="images/diagram.png" alt="Diagram">
+</a>
+
 ## Screenshot
 
 <a href="#">
