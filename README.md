@@ -1,11 +1,23 @@
 ## Use case
 The company X wants to develop an automower for square surfaces.
 
+<a href="#">
+    <img src="images/usecase_grid.png" alt="Use case grid">
+</a>
+
 The mower can be programmed to go throughout the whole surface. 
 
 Mower's position is represented by coordinates (X,Y) and a characters indicate the orientation according to cardinal notations (N,E,W,S). The lawn is divided in grid to simplify navigation.
 
 For example, the position can be 0,0,N, meaning the mower is in the lower left of the lawn, and oriented to the north.
+
+### Example
+
+In that example, mower position is 1,2,E :
+<br/>
+<a href="#">
+    <img src="images/usecase_grid_mower.png" alt="Use case grid mower">
+</a>
 
 To control the mower, we send a simple sequence of characters. 
 
