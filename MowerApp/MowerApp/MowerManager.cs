@@ -47,6 +47,7 @@ namespace MowerApp
         {
             foreach (var movement in mower.Movements)
             {
+                //TODO : add default => throw exception IllegalMovementException
                 switch (movement)
                 {
                     case Movement.F:
@@ -61,12 +62,11 @@ namespace MowerApp
                         break;
                     case Movement.L:
                         mower.ToLeft();
-                        break;
-                        //TODO : add default => throw exception IllegalMovementException
+                        break;                   
                 }
             }
 
-            DisplayMowerFinalLocation(mower.Location);
+            DisplayMowerFinalLocation(mower);
         }
 
         /// <summary>
@@ -85,12 +85,12 @@ namespace MowerApp
         }
 
         /// <summary>
-        /// Display a location in output.
+        /// Display a mower final location in output.
         /// </summary>
-        /// <param name="location">Location to print</param>
-        private void DisplayMowerFinalLocation(Location location)
+        /// <param name="mower">Mower</param>
+        private void DisplayMowerFinalLocation(Mower mower)
         {
-            Console.WriteLine("{0} {1} {2}", location.Position.X, location.Position.Y, location.Orientation);
+            Console.WriteLine("{0} {1} {2}", mower.Location.Position.X, mower.Location.Position.Y, mower.Location.Orientation);
         }
     }
 }
