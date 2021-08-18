@@ -3,7 +3,7 @@
         <img src="images/logo.png" alt="Logo">
     </a>
     <br/>
-    <p style="font-size:40"><b>Automatic Mower App</b></p>
+    <p style="font-size:40px"><b>Automatic Mower App</b></p>
 </p>
 
 ## Use case
